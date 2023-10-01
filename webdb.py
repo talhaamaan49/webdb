@@ -18,7 +18,7 @@ connection = mysql.connect(
 
 cursor = connection.cursor()
 
-
+st.set_option('browser.gatherUsageStats', False)
 sl.set_page_config(page_title='Amaan',layout='centered')
 sl.title('College Database')
 
