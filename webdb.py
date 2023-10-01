@@ -1,7 +1,9 @@
 import streamlit as sl
 import mysql.connector as mysql
 import os 
+from dotenv import load_dotenv
 
+load_dotenv(dotenv_path='environ.env')
 
 db_host = os.environ.get("DB_HOST")
 db_user = os.environ.get("DB_USER")
